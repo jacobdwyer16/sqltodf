@@ -66,7 +66,7 @@ The configuration for `sqltodf` should be provided as a dictionary. The followin
 - `DB_PASSWORD`: Password for database authentication.
 - `JAVA_HOME`: *Optional* Path to Java.exe to use JDBC instead of ODBC (ODBC is recommended)
 
-Note: To use a JDBC, TLSv1 and TLSv1.1 have to be removed from Java's security file as disabled algorithms. This is a *backup* only in the event the ODBC fails.
+Note: To use a JDBC on an older database, TLSv1 and TLSv1.1 have to be removed from Java's security file as disabled algorithms. This is a *backup* only in the event the ODBC fails and the JDBC accepted is old.
 
 ## Logging
 `sqltodf` uses Python's built-in logging. You can pass a custom logger to the `sqltodf` if you want to integrate its logs with your application's logging system.
